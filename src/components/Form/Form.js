@@ -49,15 +49,15 @@ const Form = ({ jsonAds, setJsonAds }) => {
             )
                 .then(res => res.json())
                 .then(res => setJson([...json, {
-                    adress: target[0].value,
-                    car_type: target[4].value,
+                    adress: target[2].value,
+                    car_type: target[5].value,
                     city: target[1].value,
-                    engine_power: target[5].value,
-                    engine_volume: target[6].value,
+                    engine_power: target[6].value,
+                    engine_volume: target[7].value,
                     id: rand,
-                    model: target[7].value,
-                    phone: target[2].value,
-                    price: target[3].value,
+                    model: target[4].value,
+                    phone: target[3].value,
+                    price: target[0].value,
                     type: toggle,
                 }]))
         }
